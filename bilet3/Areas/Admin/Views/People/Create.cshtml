@@ -1,0 +1,26 @@
+﻿
+
+
+@model CreatePersonVM
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Fullname">Fullname</label>
+        <input asp-for="Fullname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+        <span asp-validation-for="Fullname"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Designation">Designation</label>
+        <input asp-for="Designation" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+        <span asp-validation-for="Designation"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Photo">Photo</label>
+        <input asp-for="Photo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+        <span asp-validation-for="Photo"></span>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
