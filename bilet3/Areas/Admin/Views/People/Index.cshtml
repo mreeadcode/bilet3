@@ -13,11 +13,6 @@
 
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-    <p class="mb-4">
-        DataTables is a third party plugin that is used to generate the demo table below.
-        For more information about DataTables, please visit the <a target="_blank"
-                                                                   href="https://datatables.net">official DataTables documentation</a>.
-    </p>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
@@ -49,9 +44,9 @@
                                     <th>@person.Fullname</th>
                                     <th>@person.Designation</th>
                                     <th>
-                                        <a asp-action="Update" class="btn btn-primary">Edit</a>
-                                        <a asp-action="Detail" class="btn btn-success">Detail</a>
-                                        <a asp-action="Delete" class="btn btn-danger">Delete</a>
+                                        <a asp-action="Update" asp-route-id="@person.Id" class="btn btn-primary">Edit</a>
+                                        <a asp-action="Detail" asp-route-id="@person.Id" class="btn btn-success">Detail</a>
+                                        <a asp-action="Delete" asp-route-id="@person.Id" class="btn btn-danger">Delete</a>
                                     </th>
                                 </tr>
                             }
